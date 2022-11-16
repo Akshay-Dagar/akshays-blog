@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useRouter } from 'next/router';
 
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
@@ -7,6 +7,17 @@ import { AdjacentPosts } from '../../sections';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
+
+  useEffect(() => {              //gists are not displaying on first load so reload 1 more time
+    const reloadCount = sessionStorage.getItem('reloadCount');
+    if(!reloadCount || reloadCount < 1) {
+      sessionStorage.setItem('reloadCount', String(1));
+      window.location.reload();
+    } else {
+      sessionStorage.removeItem('reloadCount');
+    }
+  }, [])
+  
 
   if (router.isFallback) {
     return <Loader />;
