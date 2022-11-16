@@ -1,6 +1,8 @@
 # Akshay's blog
 ##### https://akshaydagar.vercel.app
 
+!(https://github.com/Akshay-Dagar/akshays-blog/blob/main/public/shot1.png)
+
 ##### This is my personal blog application.
 ##### This application was made using React, Next.js, tailwind-css, graphql, and hygraph cms as the backend. It is deployed using vercel.
 ##### To run this locally: 
