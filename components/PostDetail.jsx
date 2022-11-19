@@ -85,7 +85,7 @@ const PostDetail = ({ post }) => {
           <div className="flex mb-8 w-full justify-between">
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">
             {post.authors.map(author => {
-              return <div key={author}>
+              return <a key={author} href='https://akshaydagar.netlify.app/' target='_blank' rel='noreferrer'>
                 <img
                   alt={author.name}
                   height="30px"
@@ -94,7 +94,7 @@ const PostDetail = ({ post }) => {
                   src={author.picture.url}
                 />
                 <div className="inline align-top text-gray-700 ml-2 font-medium text-lg">{author.name}</div>
-              </div>
+              </a>
             })}
             </div>
             <div className="font-medium text-gray-700">

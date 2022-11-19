@@ -26,7 +26,7 @@ const PostCard = ({ post }) => (
     <div className="block lg:flex text-center justify-center mb-8 w-full">
       <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
       {post.authors.map(author => (
-        <div>
+        <a href='https://akshaydagar.netlify.app/' target='_blank' rel='noreferrer'>
           <Image
             unoptimized
             loader={graphCMSImageLoader}
@@ -37,7 +37,7 @@ const PostCard = ({ post }) => (
             src={author.picture.url}
           />
           <p className="inline align-top text-gray-700 ml-2 font-medium text-lg">{author.name}</p>
-        </div>
+        </a>
       ))}
       </div>
       <div className="font-medium text-gray-700 align-top">
