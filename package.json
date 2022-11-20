@@ -7,9 +7,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "engines": {
-    "node": ">=14.0"
-  },
   "dependencies": {
     "@graphcms/rich-text-react-renderer": "^0.6.1",
     "graphql": "^15.6.1",
