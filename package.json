@@ -2,14 +2,10 @@
   "name": "akshays-blog",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=14.0"
-  },
-  "engineStrict": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build",
-    "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@graphcms/rich-text-react-renderer": "^0.6.1",
