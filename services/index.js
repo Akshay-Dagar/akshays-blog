@@ -207,7 +207,7 @@ export const getFeaturedPosts = async () => {
 };
 
 export const submitComment = async (obj) => {
-  const result = await fetch('/api/comments', {
+  const result = await fetch(process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT + '/api/comments', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
